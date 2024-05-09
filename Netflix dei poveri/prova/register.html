@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione - Carpooly</title>
+    <link rel="stylesheet" href="./static/css/registrazione.css">
+    <script src="https://kit.fontawesome.com/af6ecfa2ff.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <main>
+        <section class="content">
+            <div class="container">
+                <form action="register.php" method="post">
+                    <div class="slide" id="slide1">
+                        <h1 class="form-heading">Qual è la tua e-mail?</h1>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail" id="email" name="email" autocorrect="on" required>
+                        </div>
+                        <p class="error"></p>
+                        <div class="pagination">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <button type="submit" style="float: none;" class="continue-button">Continua</button>
+                    </div>
+                    <div class="slide" id="slide2">
+                        <h1 class="form-heading">Inserisci il tuo nome e cognome</h1>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nome" name="name" autocorrect="off" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Cognome" name="surname" autocorrect="off" required>
+                        </div>
+                        <div class="pagination">
+                            <span></span>
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <button type="submit" style="float: left;" class="back-button">Indietro</button>
+                        <button type="submit" class="continue-button">Continua</button>
+                    </div>
+                    <!--<div class="slide" id="slide3">
+                        <h1 class="birthdate-heading">Qual è la tua data di nascita?</h1>
+                        <div class="form-group">
+                            <input type="date" class="birthdate-input" name="birthdate" autocorrect="off" required>
+                        </div>
+                        <p class="error"></p>
+                        <div class="pagination">
+                            <span></span>
+                            <span></span>
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <button type="submit" style="float: left;" class="back-button">Indietro</button>
+                        <button type="submit" class="continue-button">Continua</button>
+                    </div>-->
+                    <!--<div class="slide" id="slide4">
+                        <h1 class="gender-heading">Seleziona il tuo sesso</h1>
+                        <div class="form-group">
+                            <select name="gender" id="gender" required>
+                                <option value="" disabled selected>Seleziona il tuo sesso</option>
+                                <option value="male">Maschio</option>
+                                <option value="female">Femmina</option>
+                                <option value="other">Altro</option>
+                            </select>
+                        </div>
+                        <p class="error"></p>
+                        <div class="pagination">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class="active"></span>
+                            <span></span>
+                        </div>
+                        <button type="submit" style="float: left;" class="back-button">Indietro</button>
+                        <button type="submit" class="continue-button">Continua</button>
+                    </div>-->
+                    <div class="slide" id="slide5">
+                        <h1 class="password-heading">Scegli una password sicura</h1>
+                        <div class="form-group">
+                            <input type="password" id="password-input" placeholder="Password" name="password" autocorrect="off" required>
+                            <button class="toggle-password-button" type="button"><i class="toggle-password fas fa-eye"></i></button>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="confirm-password-input" placeholder="Conferma Password" name="confirm-password" autocorrect="off" required>
+                            <button class="toggle-confirm-password-button" type="button"><i class="toggle-confirm-password fas fa-eye"></i></button>
+                        </div>
+                        <p class="error"></p>
+                        <div class="pagination">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class="active"></span>
+                        </div>
+                        <button style="float: left;" type="button" class="back-button">Indietro</button>
+                        <button id="register-button" type="submit" class="continue-button">
+                            Registrati
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./static/js/register.js"></script>
+</body>
+</html>
